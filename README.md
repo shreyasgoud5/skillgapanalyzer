@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skill Gap Analysis Using Resume Embeddings
+
+An AI-assisted web application that analyzes a candidate's resume against a job description to identify matching skills, missing competencies, and areas for improvement.
+
+## Features
+
+- Upload resumes in PDF and DOCX formats.
+- Extract professional skills from resumes and job descriptions using the Gemini API.
+- Compare skills using embeddings and cosine similarity.
+- Categorize skills as matched, partially matched, or missing.
+- Generate skill match scores and candidate insights.
+- Display personalized improvement recommendations.
+- View analysis results through an interactive dashboard.
+
+## Technologies Used
+
+- **Frontend:** Next.js, React.js, TypeScript
+- **AI Integration:** Google Gemini API
+- **Database:** Supabase
+- **Styling:** Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/shreyasgoud255/skilllgapanalyzer.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd skilllgapanalyzer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file in the project root and configure the required environment variables:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Academic Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed as part of an academic team project during the 2025–2026 academic year.
